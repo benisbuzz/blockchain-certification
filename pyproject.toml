@@ -12,7 +12,12 @@ pandas = "^2.0.3"
 numpy = "^1.25.2"
 structlog = "^23.1.0"
 requests = "^2.31.0"
+datetime = "^5.2"
+ipython = "^8.14.0"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.25.1"
 
 [build-system]
 requires = ["poetry-core"]
