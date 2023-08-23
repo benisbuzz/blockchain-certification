@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "blockchain-certification"
+version = "0.1.0"
+description = "blockchain certification model for carbon offset certificates."
+authors = ["benisbuzz <ben@danziger.uk>"]
+readme = "README.md"
+packages = [{include = "blockchain_certification"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pandas = "^2.0.3"
+numpy = "^1.25.2"
+structlog = "^23.1.0"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
