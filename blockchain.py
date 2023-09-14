@@ -5,6 +5,7 @@ import time
 from hashlib import sha256
 from ecdsa import SigningKey, VerifyingKey
 from typing import Any, Literal
+import pandas as pd
 
 def get_hashed_dict(data_dict: dict) -> bytes:
     return sha256(json.dumps(data_dict, sort_keys= True).encode()).hexdigest()
@@ -59,7 +60,8 @@ class Blockchain:
         public_key = VerifyingKey.from_string(bytes.fromhex(public_key))
         assert public_key.verify(bytes.fromhex(signature), bytes.fromhex(block_hash))
     
-    def verify_block_hash()
+    def verify_block_hash():
+        pass
     
     def add_block(self, block: Block) -> None:
         self.verify_block_signature(block.data["account_key"], block.hash, block.signature)
